@@ -1,0 +1,91 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-image: url('https://www.apeldoorn.nl/DATA/APD/images/dossiers/water-en-natuur/bosbeheer/bezoek-apeldoorn-gezellig.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.centraal {
+    display: flex;
+    flex-direction: column;
+}
+
+.links, .rechts {
+    padding: 20px;
+}
+
+.links {
+    background-color: #f0f0f0;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.rechts {
+    background-color: #e0e0e0;
+}
+
+.artikel {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.artikel p {
+    margin: 0;
+}
+
+.artikel img {
+    align-self: flex-end;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .centraal {
+        flex-direction: row;
+    }
+
+    .links {
+        flex: 2;
+    }
+
+    .rechts {
+        flex: 9;
+    }
+
+    .artikel {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .artikel p {
+        flex: 1;
+    }
+
+    .artikel img {
+        flex: 0 0 auto;
+        max-width: 150px;
+        margin-left: 20px;
+    }
+}
